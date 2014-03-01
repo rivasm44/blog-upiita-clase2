@@ -1,16 +1,25 @@
-#bienvenida{	
+#bienvenida {
 	background: url("../imagenes/fondo_presentacion.jpg");
-	height: 1000px;
 	background-repeat: no-repeat;
 	line-height: 500px;
+	/*para que la imagen se extienda en toda la cja*/
+	background-size: cover;
+	/*para qeu se queda fijo*/
+	background-attachment: fixed;
+	/*sombra en el texto*/
+	text-shadow: 0px 0px 3px green;
+	-moz-text-shadow: 0px 0px 3px green;
+	-webkit-text-shadow: 0px 0px 3px green;
+	-o-text-shadow: 0px 0px 3px green;
+	-ms-text-shadow: 0px 0px 3px green;
 }
 
-.frase{
+.frase {
 	display: inline-block;
 	width: 30%;
 }
 
-#menu li, #derechos, #suscribirse{
+#menu li, #derechos, #suscribirse {
 	display: inline-block;
 	font-size: 1.5em;
 }
@@ -22,3 +31,78 @@
 #suscribirse label {
 	width: 40%;
 }
+
+/*TRANSFORMACIONES PARA LAS IMAGENES DE LAS FRASES*/
+.frase img:hover {
+	transform: scale(1.5);
+	-moz-transform: scale(1.5);/*firefox*/
+	-webkit-transform: scale(1.5);/*chrome*/
+	-o-tranform: scale(1.5);/*opera*/
+	-ms-transform: scale(1.5);/*ie*/
+}
+
+/*TRANSICION PARA LAS IMAGENES DE LAS FRASES*/
+.frase img {
+	transition: all 1.5s cubic-bezier(.84,.06,.95,.44);
+	-moz-transition: all 1.5s cubic-bezier(.84,.06,.95,.44);
+	-webkit-transition: all 1.5s cubic-bezier(.84,.06,.95,.44);
+	-o-transition: all 1.5s cubic-bezier(.84,.06,.95,.44);
+	-ms-transition: all 1.5s cubic-bezier(.84,.06,.95,.44);
+}
+
+#redes-sociales{
+	position: fixed;
+	bottom: 1.5em;
+	right: 0.5em;
+	/*top, right left bottom*/
+	background-color: orange;
+ 	opacity: 0.7;
+ 	padding: 0.5em;
+ 	/*esquinas redondas*/
+ 	border-radius: 5px 10px 15px 20px;
+ 	-moz-border-radius: 5px 10px 15px 20px;
+ 	-webkit-border-radius: 5px 10px 15px 20px;
+ 	-o-border-radius: 5px 10px 15px 20px;
+ 	-ms-border-radius: 5px 10px 15px 20px;
+ 	/*sombra*/
+ 	box-shadow: 0px 0px 5px 5px gray;
+ 	-moz-box-shadow: 0px 0px 5px 5px gray;
+ 	-webkit-box-shadow: 0px 0px 5px 5px gray;
+ 	-o-box-shadow: 0px 0px 5px 5px gray;
+ 	-ms-box-shadow: 0px 0px 5px 5px gray;
+}
+
+#div_vacio{
+	height: 100px;
+}
+
+header{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+}
+/*#redes-sociales {
+ position: fixed;
+ right: 2.5%;
+ bottom: 5%;
+ background-color: orange;
+ opacity: 0.7;
+ padding: 0.5em;
+ /*esquinas redondas*/
+/*	border-radius: 10px;
+ /*	/*sombras en la caja*/
+/*	box-shadow: 0px 0px 5px 5px gray;
+ }*/
+
+/*header {
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ }*/
+
+/*Texto sombreado*/
+/*#bienvenida {
+ text-shadow: 0px 0px 5px white;
+ }*/
