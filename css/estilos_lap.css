@@ -82,6 +82,10 @@ header{
 	right: 0px;
 	width: 100%;
 }
+
+#menu li:hover {
+	background-color:#888888;
+}
 /*#redes-sociales {
  position: fixed;
  right: 2.5%;

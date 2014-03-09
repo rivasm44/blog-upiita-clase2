@@ -4,8 +4,8 @@
     <head>
         <meta charset= "UTF-8"/>
         <title>Mi página</title>
-        <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
-        <link href="imagenes/favicon.ico" rel="shortcut icon"/>
+       <!-- <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+    --> <link href="imagenes/favicon.ico" rel="shortcut icon"/>
         <link href="css/normalize.css" rel="stylesheet" media="screen"/>
         <link href="css/estilos_all.css" rel="stylesheet" media="screen"/>
         <link href="css/estilos_lap.css" rel="stylesheet" media="screen and (min-width:600px)"/>
@@ -24,6 +24,9 @@
                     </li>
                     <li>
                         Blog
+                    </li>
+                    <li>
+                        Contacto
                     </li>
                     <li>
                         Acerca

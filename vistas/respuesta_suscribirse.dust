@@ -34,12 +34,8 @@
             </nav>
         </header>
         <section>
-            <h2>La siguiente información ha sido recibida</h2>
-            <p>Nombre: {nombre}</p>
-            <p>Email: {email}</p>
-            <p>Website: {url}</p>
-            <p>Edad: {edad}</p>
-            <h2>En breve nos pondremos en contacto contigo :)</h2>
+            <h2>Te has suscríto con el email {email} </h2>
+            <p>{asunto}</p>
         </section>
         <footer>
             <div id="derechos">
@@ -54,8 +50,11 @@
                 </div>
             </div>
             <div id="suscribirse">
-                <label for="email">Suscríbete:</label>
-                <input id="email" type="text" />
+                <form action="/suscribirse" method="post">
+                    <label for="email">Suscríbete:</label>
+                    <input id="email" type="text" name="email"/>
+                    <input value="enviar" type="submit">
+                </form>
             </div>
         </footer>
     </body>
