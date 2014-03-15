@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
 	//debemos escuchar el evento click sbre las imagenes
 	var cajitas = $(".preview");
 	var imagen_principal = $("#imagen-normal");
@@ -13,4 +13,4 @@ $(function(){
 		});		
 		contenedor.fadeIn("slow");
 	});
-});
+});*/

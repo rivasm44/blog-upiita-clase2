@@ -4,6 +4,8 @@
     <head>
         <meta charset= "UTF-8"/>
         <title>Mi página</title>
+        <script src="javascript/jquery1_10.js"></script>
+        <script src="javascript/galeria.js"></script>
         <style>
 			#galeria{
 			    margin: 3em;
