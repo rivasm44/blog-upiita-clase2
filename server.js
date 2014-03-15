@@ -15,6 +15,7 @@ console.log("Servidor levantado...");
 app.use("/css", express.static(__dirname + "/css"));
 app.use("/imagenes", express.static(__dirname + "/imagenes"));
 app.use("/videos", express.static(__dirname + "/videos"));
+app.use("/javascript", express.static(__dirname + "/javascript"));
 console.log("Directorios estáticos configurados...");
 
 //4.-Hagamos que se muestre el directorio de imagenes
@@ -56,6 +57,9 @@ app.get("/contacto", function(request, response){
 	response.render("contacto");
 });
 
+app.get("/productos", function(request, response){
+	response.render("productos");
+});
 //11.-Respondemos a otra peticion POST (/contacto)
 //esta peticion se realiza cuando oprimo el boton submit en
 //la FORM que declare en el archivo contacto.dust

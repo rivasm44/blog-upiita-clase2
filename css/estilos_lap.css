@@ -86,6 +86,9 @@ header{
 #menu li:hover {
 	background-color:#888888;
 }
+.prueba{
+	background-color: blue;
+}
 /*#redes-sociales {
  position: fixed;
  right: 2.5%;

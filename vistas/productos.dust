@@ -4,8 +4,28 @@
     <head>
         <meta charset= "UTF-8"/>
         <title>Mi página</title>
-        <!-- <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
-        -->
+        <style>
+			#galeria{
+			    margin: 3em;
+			    padding: 2em;			
+			}
+			
+			#titulo-productos, #galeria, #menu-productos{
+			    text-align: center;
+			}
+			
+			#producto{
+			    display:inline-block;
+			    border-style: solid;
+                border-color: #008000;
+			}
+			.preview{
+			    width: 15%;
+			    margin: 0.5em;
+			}
+        </style>
+<script src="../javascript/jquery-1.10.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
         <link href="imagenes/favicon.ico" rel="shortcut icon"/>
         <link href="css/normalize.css" rel="stylesheet" media="screen"/>
         <link href="css/estilos_all.css" rel="stylesheet" media="screen"/>
@@ -13,22 +33,22 @@
         <link href="css/estilos_moviles.css" rel="stylesheet" media="screen and (max-width:600px)"/>
     </head>
     <body>
+        <div id="div-vacio"></div>
         <!-- contenido de la página -->
-        <div id="div_vacio"></div>
         <header>
             <nav>
                 <ul id="menu">
                     <li>
-                        <a href="/index">Inicio</a>
+                        <a href="index">Inicio</a>
                     </li>
                     <li>
-                        Productos
+                        <a href="productos">Productos</a>
                     </li>
                     <li>
                         Blog
                     </li>
                     <li>
-                       <a href="/contacto">Contacto</a>
+                        <a href="contacto">Contacto</a>
                     </li>
                     <li>
                         Acerca
@@ -36,38 +56,19 @@
                 </ul>
             </nav>
         </header>
-
-        <!--OBSERVA LA DEFINICION DEL ATRIBUTO TYPE DE LOS INPUTS-->
-        <section>
-            <form action="/respuesta_contacto" method="post">
-                <p>
-                    <!--solicito el nombre-->
-                    <label>Nombre</label>
-                    <input type="text" name="nombre"/>
-                </p>
-                <p>
-                    <!--solicito el email-->
-                    <label>Email</label>
-                    <input type="email" name="email"/>
-                </p>
-                <p>
-                    <!--solicito la url-->
-                    <label>Website:</label>
-                    <input type="url" name="url"/>
-                </p>
-                <p>
-                    <label>Edad:</label>
-                    <input type="number" name="edad" min="12" max="90" step="1"/>
-
-                </p>
-                <p>
-                    <label>Comentario:</label>
-                    <input type="textarea" name="comentario"/>
-                </p>
-                <input value="Enviar" type="submit" />
-            </form>
+        <section id="galeria">
+            <h2 id="titulo-productos">Conoce nuestros productos</h2>
+            <div id="producto">
+                <img id="imagen-normal" src="../imagenes/imagen1.jpg"/>
+            </div>
+            <div id="menu-productos">
+                <img class="preview" src="../imagenes/imagen1_preview.jpg" data-src-imagen="../imagenes/imagen1.jpg" />
+                <img class="preview" src="../imagenes/imagen2_preview.jpg" data-src-imagen="../imagenes/imagen2.jpg" />
+                <img class="preview" src="../imagenes/imagen3_preview.jpg" data-src-imagen="../imagenes/imagen3.jpg" />
+                <img class="preview" src="../imagenes/imagen4_preview.jpg" data-src-imagen="../imagenes/imagen4.jpg" />
+                <img class="preview" src="../imagenes/imagen5_preview.jpg" data-src-imagen="../imagenes/imagen5.jpg" />
+            </div>
         </section>
-
         <footer>
             <div id="derechos">
                 <p>

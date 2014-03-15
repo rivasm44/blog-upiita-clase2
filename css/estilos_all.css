@@ -45,3 +45,13 @@ footer {
 video {
 	max-width: 100%;
 }
+
+#menu a{
+	color: white;
+	text-decoration: none;
+}
+
+#menu li{
+	padding: 1em;
+	margin: 0em;
+}

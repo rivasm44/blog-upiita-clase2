@@ -4,8 +4,11 @@
     <head>
         <meta charset= "UTF-8"/>
         <title>Mi página</title>
-       <!-- <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
-    --> <link href="imagenes/favicon.ico" rel="shortcut icon"/>
+        <script src="javascript/jquery1_10.js"></script>
+        <script src="javascript/eventos_jquery.js"></script>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+        -->
+        <link href="imagenes/favicon.ico" rel="shortcut icon"/>
         <link href="css/normalize.css" rel="stylesheet" media="screen"/>
         <link href="css/estilos_all.css" rel="stylesheet" media="screen"/>
         <link href="css/estilos_lap.css" rel="stylesheet" media="screen and (min-width:600px)"/>
@@ -17,7 +20,7 @@
             <nav>
                 <ul id="menu">
                     <li>
-                        Inicio
+                        <a href="/index">Inicio</a>
                     </li>
                     <li>
                         Productos
@@ -26,7 +29,7 @@
                         Blog
                     </li>
                     <li>
-                        Contacto
+                        <a href="/contacto">Contacto</a>
                     </li>
                     <li>
                         Acerca
@@ -73,10 +76,13 @@
                     Mi página, derechos reservados
                 </p>
                 <div id="redes-sociales">
-                    <img src="imagenes/facebook.png" />
-                    <img src="imagenes/twitter.png"/>
-                    <img src="imagenes/googleplus.png"/>
-                    <img src="imagenes/youtube.png"/>
+                    <a href="#" id="cerrar">cerrar</a>
+                    <div id="iconitos">
+                        <img src="imagenes/facebook.png" />
+                        <img src="imagenes/twitter.png"/>
+                        <img src="imagenes/googleplus.png"/>
+                        <img src="imagenes/youtube.png"/>
+                    </div>
                 </div>
             </div>
             <div id="suscribirse">
