@@ -40,6 +40,10 @@ app.get("/index", function(request, response){
 	response.render("index");
 });
 
+app.get("/acerca", function(request, response){
+	response.render("acerca");
+});
+
 //9.-Respondemos a la peticion POST (/suscribirse)
 //esta peticion se realiza cuando oprimo el boton submit en
 //la FORM que declare en el footer del index.dust

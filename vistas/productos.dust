@@ -26,7 +26,7 @@
 			    margin: 0.5em;
 			}
         </style>
-<script src="../javascript/jquery-1.10.2.min.js"></script>
+
         <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
         <link href="imagenes/favicon.ico" rel="shortcut icon"/>
         <link href="css/normalize.css" rel="stylesheet" media="screen"/>
